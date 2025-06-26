@@ -1,30 +1,42 @@
-Based on the analysis of your two uploaded Jupyter Notebooks (A1.ipynb and A2.ipynb), here is a README description that explains both files clearly:
-
 📊 DeepFlow Data Analysis Notebooks
-This repository contains two Python Jupyter notebooks for data preprocessing, visualization, and feature engineering on distinct datasets. The goal is to prepare the datasets for machine learning or data insights using structured, well-documented steps.
+This repository contains two Jupyter notebooks focused on structured data preprocessing and exploratory analysis. Each notebook targets a different dataset, applying essential steps to prepare the data for machine learning or derive valuable insights.
 
-📁 Files Overview
-A1.ipynb – Auction Sales Data Preprocessing & Encoding
-Purpose: Preprocess machinery auction sales data (Train/Test CSVs).
+📁 Notebook Summaries
+🔹 A1.ipynb — Auction Sales Data: Preprocessing & Encoding
+Objective:
+Clean and encode a machinery auction sales dataset using standard preprocessing techniques to prepare it for predictive modeling.
 
-Key Steps:
+Main Tasks Covered:
 
-Load datasets using pandas.
-Parse and sort by saledate.
-Drop columns with over 30% missing values.
-Remove identifiers and date fields (SalesID, MachineID, ModelID, saledate).
-Fill missing numeric values using median imputation.
-Use Label Encoding for categorical variables using sklearn.preprocessing.LabelEncoder.
-Target Outcome: Cleaned, encoded training and testing datasets ready for modeling.
+Load training and test CSV files using pandas.
 
-A2.ipynb – Zomato Dataset Overview & Statistics
-Purpose: Perform exploratory data analysis on a restaurant dataset (zomato.csv).
+Parse the saledate column and sort the data chronologically.
 
-Key Steps:
+Eliminate columns with over 30% missing data.
 
-Read the CSV (likely exported from Excel).
-Display initial records with .head().
-Show dataset structure using .info() and .describe().
-Print all column names for reference.
-# stamatics2025-deepflow-
-Assignment
+Drop identifier and date-related fields (SalesID, MachineID, ModelID, saledate) that are not useful for modeling.
+
+Apply median imputation to handle missing numeric values.
+
+Use LabelEncoder from sklearn.preprocessing to encode categorical features.
+
+Outcome:
+A cleaned and encoded version of both training and test sets, suitable for use in machine learning models.
+
+🔹 A2.ipynb — Zomato Dataset: Exploratory Analysis
+Objective:
+Conduct an initial exploration of a restaurant dataset to understand its structure and prepare for further analysis or visualization.
+
+Main Tasks Covered:
+
+Load the zomato.csv dataset (commonly exported from Excel).
+
+Display the first few rows using .head() to get a quick overview.
+
+Summarize the structure of the dataset using .info() and .describe().
+
+Print all column names to understand available features.
+
+Outcome:
+A structured overview of the dataset with basic statistical summaries and feature listings, laying the groundwork for deeper analysis.
+
